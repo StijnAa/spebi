@@ -26,7 +26,7 @@ const ImageContainer = styled.div`
 
 const Img = styled.div`
   width: 500px;
-  height: 1500px;
+  height: 800px;
   background-image: url("./bottle.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -34,8 +34,8 @@ const Img = styled.div`
   background-position: 50% 70%;
   @media (max-width: 768px) {
     background-position: 50% 70%;
-      width: 500px;
-  height: 1500px;
+
+
   }
 
 `;

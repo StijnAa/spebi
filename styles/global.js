@@ -60,6 +60,9 @@ const GlobalStyles = createGlobalStyle`
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+main{
+    height: 80vh;
+}
 `;
 
 export default GlobalStyles;

@@ -37,6 +37,9 @@ const TickerWrap = styled.section`
   background-color: rgba(#000, 0.9);
   box-sizing: content-box;
   transform: translate(-163px,-688px) rotate(-28deg);
+  @media (max-width: 768px) {
+    transform: translate(-163px,-288px) rotate(-28deg);
+  }
 
 `;
 

@@ -28,6 +28,7 @@ const TickerKeyframes2 = keyframes`
 `;
 
 const TickerWrap = styled.section`
+  font-weight: 900;
   position: fixed;
   display: block;
   bottom: 0;
@@ -36,15 +37,13 @@ const TickerWrap = styled.section`
   height: 4rem;
   background-color: rgba(#000, 0.9);
   box-sizing: content-box;
-  transform: translate(-163px,-688px) rotate(-28deg);
+  transform: translate(-163px, -688px) rotate(-28deg);
   @media (max-width: 768px) {
-    transform: translate(-163px,-288px) rotate(-28deg);
+    transform: translate(-163px, -288px) rotate(-28deg);
   }
-
 `;
 
 const StyledTicker = styled.div`
-
   position: absolute;
 
   height: 4rem;
@@ -60,7 +59,7 @@ const StyledTicker = styled.div`
   animation-name: ${TickerKeyframes};
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
-  &>p {
+  & > p {
     display: inline-block;
 
     padding: 0 0.2rem;
@@ -81,9 +80,9 @@ const StyledTickerSecond = styled.div`
   animation-timing-function: linear;
   -webkit-animation-name: ${TickerKeyframes2};
   animation-name: ${TickerKeyframes2};
-  -webkit-animation-duration:10s;
+  -webkit-animation-duration: 10s;
   animation-duration: 10s;
-  &>p {
+  & > p {
     display: inline-block;
 
     padding: 0 0.2rem;
@@ -91,7 +90,6 @@ const StyledTickerSecond = styled.div`
     color: black;
   }
 `;
-
 
 const Ticker = () => {
   return (

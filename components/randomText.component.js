@@ -17,7 +17,7 @@ const RandomText = () => {
   const [text, setText] = useState("");
   const texts = [
     "Ik heb echt kaulo veel zin in een",
-    "Ik ben denk ik wel echt 100p bij",
+    "Ben denk ik wel echt 100p bij een",
     "Bopla!",
   ];
   useEffect(() => {

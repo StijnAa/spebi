@@ -31,11 +31,12 @@ const TickerWrap = styled.section`
   position: fixed;
   display: block;
   bottom: 0;
-  width: 100%;
+  width: 200%;
   overflow: hidden;
   height: 4rem;
   background-color: rgba(#000, 0.9);
   box-sizing: content-box;
+  transform: translate(-163px,-688px) rotate(-28deg);
 
 `;
 
@@ -65,7 +66,6 @@ const StyledTicker = styled.div`
   }
 `;
 const StyledTickerSecond = styled.div`
-
   position: absolute;
   height: 4rem;
   line-height: 4rem;
@@ -88,6 +88,7 @@ const StyledTickerSecond = styled.div`
     color: black;
   }
 `;
+
 
 const Ticker = () => {
   return (

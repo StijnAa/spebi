@@ -28,7 +28,6 @@ const TickerKeyframes2 = keyframes`
 `;
 
 const TickerWrap = styled.section`
-  font-weight: 900;
   position: fixed;
   display: block;
   bottom: 0;
@@ -61,7 +60,7 @@ const StyledTicker = styled.div`
   animation-duration: 10s;
   & > p {
     display: inline-block;
-
+    font-weight: 900;
     padding: 0 0.2rem;
     font-size: 2rem;
     color: black;
@@ -84,7 +83,7 @@ const StyledTickerSecond = styled.div`
   animation-duration: 10s;
   & > p {
     display: inline-block;
-
+    font-weight: 900;
     padding: 0 0.2rem;
     font-size: 2rem;
     color: black;

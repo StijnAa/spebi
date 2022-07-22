@@ -5,6 +5,7 @@ import Head from "next/head";
 import { SSRProvider } from "@react-aria/ssr";
 import Hero from "../components/hero.component";
 import Ticker from "../components/ticker.component";
+import RandomText from "../components/randomText.component";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
           <title>Spebi.nl</title>
         </Head>
         <main>
-          <Ticker />
+          <RandomText/>
           <Hero />
+          <Ticker />
         </main>
       </ThemeProvider>
     </SSRProvider>

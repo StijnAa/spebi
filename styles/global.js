@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     }
     body{
         margin: 0;
-        background-color: #eee;
+        background-color: #fff;
     }
     img{
         max-width: 100%;

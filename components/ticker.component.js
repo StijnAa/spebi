@@ -28,6 +28,8 @@ const TickerKeyframes2 = keyframes`
 `;
 
 const TickerWrap = styled.section`
+    z-index: -10;
+
   position: fixed;
   display: block;
   bottom: 0;
@@ -65,7 +67,7 @@ const StyledTicker = styled.div`
     font-weight: 900;
     padding: 0 0.2rem;
     font-size: 2rem;
-    color: black;
+    color: #cacaca;
   }
 `;
 

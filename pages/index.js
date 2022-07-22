@@ -3,7 +3,8 @@ import theme from "../styles/theme";
 import GlobalStyles from "../styles/global.js";
 import Head from "next/head";
 import { SSRProvider } from "@react-aria/ssr";
-
+import Hero from "../components/hero.component";
+import Ticker from "../components/ticker.component";
 
 export default function Home() {
   return (
@@ -11,12 +12,11 @@ export default function Home() {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Head>
-          <title>Stijn Aa</title>
+          <title>Spebi.nl</title>
         </Head>
-        <header>
-          <h1>Hello world</h1>
-        </header>
         <main>
+          <Ticker />
+          <Hero />
         </main>
       </ThemeProvider>
     </SSRProvider>

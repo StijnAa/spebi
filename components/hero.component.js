@@ -9,7 +9,7 @@ const StyledHero = styled.section`
     font-size: 8rem;
     position: absolute;
     width: 100%;
-    font-weight: 900;
+    font-weight: 700;
     @media (max-width: 768px) {
         font-size: 7rem;
         margin-top: 3rem;

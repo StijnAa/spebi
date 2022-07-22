@@ -61,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
     margin-inline-end: 0px;
 }
 main{
-    height: 80vh;
+    height: 60vh;
 }
 `;
 

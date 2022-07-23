@@ -14,7 +14,6 @@ const StyledHero = styled.section`
     font-weight: 700;
     @media (max-width: 768px) {
         font-size: 5rem;
-        margin-top: 3rem;
   }
   }
 `;

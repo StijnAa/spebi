@@ -4,12 +4,12 @@ import styled from "styled-components";
 const StyledRandomText = styled.section`
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+
   & > h2 {
     font-size: 1rem;
   }
   @media (max-width: 768px) {
-    margin-top: 5rem;
+
   }
 `;
 

@@ -65,12 +65,11 @@ const GlobalStyles = createGlobalStyle`
     margin-inline-end: 0px;
 }
 main{
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center ;
-    height: 90vh;
-    overflow-y:hidden;
+    height: 85vh;
+    overflow:hidden;
 }
 `;
 

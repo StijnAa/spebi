@@ -33,10 +33,12 @@ const TickerWrap = styled.section`
   position: fixed;
   display: block;
   bottom: 0;
-  width: 200%;
+  width: 100%;
   height: 4rem;
   background-color: rgba(#000, 0.9);
   box-sizing: content-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transform: translate(-163px, -258px) rotate(-10deg);
   @media (max-width: 768px) {
     transform: translate(-163px, -88px) rotate(-10deg);
@@ -65,8 +67,8 @@ const StyledTicker = styled.div`
     display: inline-block;
     font-weight: 700;
     padding: 0 0.2rem;
-    font-size: 2rem;
-    color: #cacaca;
+    font-size: 1rem;
+    color: #eee;
   }
 `;
 

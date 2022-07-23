@@ -23,7 +23,7 @@ const ImageContainer = styled.div`
   position: relative;
   z-index: 10;
   width: 100%;
-  height: 60vh;
+  height: 45vh;
 `;
 const ButtonContainer = styled.div`
 `;

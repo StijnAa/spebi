@@ -68,7 +68,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center ;
-    height: 100vh;
+    height: 90vh;
     overflow-y:hidden;
 }
 `;

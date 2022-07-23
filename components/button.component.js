@@ -12,6 +12,7 @@ const StyledButton = styled.a`
   border-radius: 2rem;
   padding:1rem 1.5rem;
   margin-top: 2rem;
+  min-width: 150px;
   &:hover{
     transform: scale(0.98);
   }

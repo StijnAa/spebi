@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
 import ButtonLink from "./button.component";
-import Gif from "./gif.component";
+import EmailForm from "./emailForm.component";
 
-const StyledHero = styled.section`
+
+const StyledPreOrder = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -23,16 +23,16 @@ const StyledHero = styled.section`
 const ButtonContainer = styled.div`
 `;
 
-const Hero = () => {
+const PreOrder = () => {
   return (
-    <StyledHero>
+    <StyledPreOrder>
       <h1>SPEBI</h1>
-      <Gif/>
+      <EmailForm/>
       <ButtonContainer>
-        <ButtonLink href="/preorder">MOEK HEBBEN</ButtonLink>
+        <ButtonLink href="/thanks">Verstuur</ButtonLink>
       </ButtonContainer>
-    </StyledHero>
+    </StyledPreOrder>
   );
 };
 
-export default Hero;
+export default PreOrder;

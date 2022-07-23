@@ -39,9 +39,9 @@ const TickerWrap = styled.section`
   box-sizing: content-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: translate(-163px, -258px) rotate(-10deg);
+  transform: translate(-163px, -58px) rotate(-10deg);
   @media (max-width: 768px) {
-    transform: translate(-163px, -88px) rotate(-10deg);
+    transform: translate(-163px, -18px) rotate(-10deg);
   }
   &>div:first-child{
     -webkit-animation-name: ${TickerKeyframes};

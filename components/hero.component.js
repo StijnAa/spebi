@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import ButtonLink from "./button.component";
 
 const StyledHero = styled.section`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 
   & > h1 {
@@ -13,16 +14,18 @@ const StyledHero = styled.section`
     width: 100%;
     font-weight: 700;
     @media (max-width: 768px) {
-        font-size: 5rem;
-  }
+      font-size: 5rem;
+    }
   }
 `;
 
 const ImageContainer = styled.div`
-    position: relative;
+  position: relative;
   z-index: 10;
   width: 100%;
   height: 60vh;
+`;
+const ButtonContainer = styled.div`
 `;
 
 const Hero = () => {
@@ -31,12 +34,15 @@ const Hero = () => {
       <h1>SPEBI</h1>
       <ImageContainer>
         <Image
-            src="/bottle.gif"
-            alt="SPEBI"
-            layout='fill'
-            objectFit='contain'
-            />
+          src="/bottle.gif"
+          alt="SPEBI"
+          layout="fill"
+          objectFit="contain"
+        />
       </ImageContainer>
+      <ButtonContainer>
+        <ButtonLink href="/">MOEK HEBBEN</ButtonLink>
+      </ButtonContainer>
     </StyledHero>
   );
 };

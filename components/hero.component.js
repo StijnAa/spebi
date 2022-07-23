@@ -9,11 +9,11 @@ const StyledHero = styled.section`
 
   & > h1 {
     z-index: -10;
-    font-size: 8rem;
+    font-size: 6rem;
     width: 100%;
     font-weight: 700;
     @media (max-width: 768px) {
-        font-size: 7rem;
+        font-size: 5rem;
         margin-top: 3rem;
   }
   }
@@ -23,7 +23,7 @@ const ImageContainer = styled.div`
     position: relative;
   z-index: 10;
   width: 100%;
-  height: 600px;
+  height: 60vh;
 `;
 
 const Hero = () => {

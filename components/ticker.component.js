@@ -34,7 +34,6 @@ const TickerWrap = styled.section`
   display: block;
   bottom: 0;
   width: 200%;
-  overflow: hidden;
   height: 4rem;
   background-color: rgba(#000, 0.9);
   box-sizing: content-box;

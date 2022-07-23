@@ -69,6 +69,7 @@ main{
     flex-direction: column;
     justify-content: center ;
     height: 100vh;
+    overflow-y:hidden;
 }
 `;
 

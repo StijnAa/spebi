@@ -18,7 +18,7 @@ const RandomText = () => {
   const texts = [
     "Ik heb echt kaulo veel zin in een",
     "Ben denk ik wel echt 100p bij een",
-    "Bopla!",
+    "Doe maar twaalf biba en twaalf",
   ];
   useEffect(() => {
     setText(texts[Math.floor(Math.random() * texts.length)]);

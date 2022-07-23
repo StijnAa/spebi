@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-          <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />       
+          <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Simonetta:wght@900&family=Work+Sans:wght@300;500;700&display=swap" rel="stylesheet" />       
           <link
             href="/icofont/icofont.min.css"
             rel="stylesheet"

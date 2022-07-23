@@ -39,6 +39,10 @@ const GlobalStyles = createGlobalStyle`
         cursor: pointer;
         outline: inherit;
     }
+    h1{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
     h2 {
         display: block;
         font-size: 1.5em;
@@ -61,7 +65,8 @@ const GlobalStyles = createGlobalStyle`
     margin-inline-end: 0px;
 }
 main{
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
 }
 `;
 

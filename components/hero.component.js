@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
 const StyledHero = styled.section`
+    display: flex;
+    flex-direction: column;
   text-align: center;
 
   & > h1 {
     z-index: -10;
     font-size: 8rem;
-    position: absolute;
     width: 100%;
     font-weight: 700;
     @media (max-width: 768px) {
@@ -18,26 +20,10 @@ const StyledHero = styled.section`
 `;
 
 const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  text-align: center;
+    position: relative;
   z-index: 10;
-`;
-
-const Img = styled.div`
-  width: 500px;
-  height: 800px;
-  background-image: url("./bottle.gif");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-clip: cover;
-  background-position: 50% 70%;
-  @media (max-width: 768px) {
-    background-position: 50% 70%;
-
-
-  }
-
+  width: 100%;
+  height: 600px;
 `;
 
 const Hero = () => {
@@ -45,7 +31,12 @@ const Hero = () => {
     <StyledHero>
       <h1>SPEBI</h1>
       <ImageContainer>
-        <Img />
+        <Image
+            src="/bottle.gif"
+            alt="SPEBI"
+            layout='fill'
+            objectFit='contain'
+            />
       </ImageContainer>
     </StyledHero>
   );

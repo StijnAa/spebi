@@ -18,8 +18,8 @@ export default function Home() {
         <main>
           <RandomText/>
           <Hero />
-          <Ticker />
         </main>
+        <Ticker />
       </ThemeProvider>
     </SSRProvider>
   );

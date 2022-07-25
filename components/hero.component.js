@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import ButtonLink from "./button.component";
+import ButtonLink from "./buttonLink.component";
 import Gif from "./gif.component";
 
 const StyledHero = styled.section`

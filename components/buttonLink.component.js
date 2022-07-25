@@ -1,9 +1,8 @@
-import { useButton } from "@react-aria/button";
-import {useRef} from 'react';
+import { useLink } from "@react-aria/link";
 import styled from "styled-components";
 import React from "react";
 
-const StyledButton = styled.button`
+const StyledButton = styled.a`
   color: white;
   background-color: #ffd835;
   display: inline-flex;
@@ -19,16 +18,20 @@ const StyledButton = styled.button`
   }
 `;
 
-function Button(props) {
-  let ref = useRef();
-  let { buttonProps } = useButton(props, ref);
-  let { children } = props;
+function ButtonLink(props) {
+  let ref = React.useRef();
+  let { linkProps } = useLink(props, ref);
 
   return (
-    <StyledButton {...buttonProps} ref={ref}>
-      {children}
+    <StyledButton
+      {...linkProps}
+      ref={ref}
+      href={props.href}
+      target={props.target}
+    >
+      {props.children}
     </StyledButton>
   );
 }
 
-export default Button;
+export default ButtonLink;

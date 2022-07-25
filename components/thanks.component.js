@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ButtonLink from "./button.component";
+import ButtonLink from "./buttonLink.component";
 import EmailForm from "./emailForm.component";
 
 const StyledThanks = styled.section`

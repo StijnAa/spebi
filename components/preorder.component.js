@@ -28,9 +28,6 @@ const PreOrder = () => {
     <StyledPreOrder>
       <h1>SPEBI</h1>
       <EmailForm/>
-      <ButtonContainer>
-        <ButtonLink href="/thanks">Verstuur</ButtonLink>
-      </ButtonContainer>
     </StyledPreOrder>
   );
 };

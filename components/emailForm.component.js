@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
+import Button from "./button.component";
+import { app, database } from "../firebase/firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
+import { redirect } from "next/dist/server/api-utils";
 
-const StyledEmailForm = styled.form`
+const StyledEmailForm = styled.div`
   width: 100%;
   height: 45vh;
   display: flex;
@@ -11,7 +15,7 @@ const StyledEmailForm = styled.form`
     margin: auto 0;
     & > div {
       margin-bottom: 2.5rem;
-      &>p{
+      & > p {
         margin-top: 0.5rem;
       }
     }
@@ -34,10 +38,28 @@ const Input = styled.input`
 `;
 
 const EmailForm = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
+  const dbInstance = collection(database, "emails");
 
+  const handleSaveEmail = () =>{
+    if (email != "") {
+      saveEmail()
+      setEmail("");
+      redirect
+    }else{
+      console.log("empty email error")
+    }
+  }
+
+  const saveEmail = () => {
+    addDoc(dbInstance, {
+      email: email,
+    });
+
+  };
 
   return (
+    <form>
     <StyledEmailForm>
       <div>
         <div>
@@ -45,9 +67,15 @@ const EmailForm = () => {
           <p>dan laten we je weten wanneer SPEBI verkrijgbaar is!</p>
         </div>
         <label>Email:</label>
-        <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+        <Input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </div>
     </StyledEmailForm>
+      <Button onClick={(e) => handleSaveEmail()}>Verzenden</Button>
+    </form>
   );
 };
 

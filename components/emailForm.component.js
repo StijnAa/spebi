@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from "./button.component";
 import { app, database } from "../firebase/firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
-import { redirect } from "next/dist/server/api-utils";
+import Router from 'next/router';
 
 const StyledEmailForm = styled.div`
   width: 100%;
@@ -45,7 +45,7 @@ const EmailForm = () => {
     if (email != "") {
       saveEmail()
       setEmail("");
-      redirect
+      Router.push('/thanks')
     }else{
       console.log("empty email error")
     }
